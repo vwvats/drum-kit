@@ -1,0 +1,56 @@
+:root {
+  --color-primary: #fff;
+  --color-accent: #f25f25;
+}
+
+html {
+  background: url(assets/drums.jpg);
+  background-size: cover;
+  font-family: Catamaran, sans-serif;
+  font-size: 62.5%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.key {
+  border: 0.4rem solid var(--color-primary);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: var(--color-accent);
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 0.5rem #000;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 1rem var(--color-accent);
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: var(--color-accent);
+}
+
